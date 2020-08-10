@@ -6,13 +6,13 @@ namespace Library.Models
   {
     public Copy()
     {
-      this.Checkouts = new HashSet<Checkout>();
+      // this.Checkouts = new HashSet<Checkout>();
     }
-
+    public bool OnLoan { get; set; }
     public int CopyId { get; set; }
     public int BookId { get; set; }
     public virtual Book Book { get; set; }
 
-    public virtual ICollection<Checkout> Checkouts { get; set; }
+    // public virtual ICollection<Checkout> Checkouts { get; set; }
   }
 }
