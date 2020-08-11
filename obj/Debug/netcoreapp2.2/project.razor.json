@@ -2961,6 +2961,11 @@
   "RootNamespace": "Library",
   "Documents": [
     {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Patrons/Index.cshtml",
+      "TargetPath": "Views\\Patrons\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2981,18 +2986,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Detial.cshtml",
-      "TargetPath": "Views\\Books\\Detial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/New.cshtml",
-      "TargetPath": "Views\\Books\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/DeleteAll.cshtml",
-      "TargetPath": "Views\\Books\\DeleteAll.cshtml",
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Details.cshtml",
+      "TargetPath": "Views\\Books\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
