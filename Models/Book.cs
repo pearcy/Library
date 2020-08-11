@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Library.Models
 {
@@ -14,8 +15,10 @@ namespace Library.Models
 
     public int CopyCount { get; set; }
 
+    [DisplayName("Book Title")]
     public string BookTitle { get; set; }
 
+    [DisplayName("Genre")]
     public string BookGenre { get; set; }
 
     public virtual ICollection<AuthorBook> Authors { get; set; }

@@ -10,7 +10,7 @@ namespace Library.Controllers
   public class BooksController : Controller
   {
     private readonly LibraryContext _db;
-    
+
     public BooksController(LibraryContext db)
     {
       _db = db;
@@ -25,6 +25,7 @@ namespace Library.Controllers
       ViewBag.AuthorId = new SelectList(_db.Authors, "AuthorId", "AuthorName");
       return View();
     }
+
     [HttpPost]
     public ActionResult Create(Book book, int AuthorId, string AuthorName)
     {
@@ -35,7 +36,8 @@ namespace Library.Controllers
         {
           _db.AuthorBook.Add(new AuthorBook() { AuthorId = AuthorId, BookId = book.BookId });
         }
-      } else
+      }
+      else
       {
         Author NewAuthor = new Author();
         NewAuthor.AuthorName = AuthorName;
