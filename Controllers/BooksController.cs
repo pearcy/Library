@@ -47,6 +47,17 @@ namespace Library.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    public ActionResult Details(int id)
+    {
+      var thisBook = _db.Books
+        .Include(book => book.Authors)
+          .ThenInclude(join => join.Author)
+        .Include(book => book.Patrons)
+          .ThenInclude(join => join.Patron)
+        .FirstOrDefault(book => book.BookId == id);
+      return View(thisBook);
+    }
   }
 }
 

@@ -8,10 +8,11 @@
 
 <h3>@Html.DisplayNameFor(model => model.BookGenre): @Html.DisplayFor(model => model.BookGenre)</h3>
 
-<p>@Html.Label("Copies Available in Library"): @Html.DisplayFor(model => model.CopyCount - model.Patrons.Count)</p>
+<p>@Html.Label("Copies Available in Library"): @Model.CopiesAvailable()</p>
 
 @* @*If user profile is Librarian, show list of patrons who have checked out the book *@
 
+<p>@Html.ActionLink("Edit Book Info", "Edit", new { id = Model.BookId })</p>
 <p>@Html.ActionLink("Delete Book from Catalogue", "Delete", new { id = Model.BookId })</p>
 <p>@Html.ActionLink("View All Books", "Index")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
