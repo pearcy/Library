@@ -13,7 +13,7 @@ namespace Library.Models
     public int BookId { get; set; }
 
     public int CopyCount { get; set; }
-    public int OnLoanCount { get; set; }
+    public int OnLoanCount { get; set; } = 0;
 
     public string BookTitle { get; set; }
 
