@@ -2991,6 +2991,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Edit.cshtml",
+      "TargetPath": "Views\\Books\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Details.cshtml",
       "TargetPath": "Views\\Books\\Details.cshtml",
       "FileKind": "mvc"

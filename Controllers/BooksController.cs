@@ -58,6 +58,69 @@ namespace Library.Controllers
         .FirstOrDefault(book => book.BookId == id);
       return View(thisBook);
     }
+
+    public ActionResult Edit(int id)
+    {
+      var thisBook = _db.Books.FirstOrDefault(book => book.BookId == id);
+      ViewBag.AuthorId = new SelectList(_db.Authors, "AuthorId", "AuthorName");
+      return View(thisBook);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Book book, int AuthorId, string AuthorName)
+    {
+      if (AuthorName == "")
+      {
+        if (AuthorId != 0)
+        {
+          _db.AuthorBook.Add(new AuthorBook() { AuthorId = AuthorId, BookId = book.BookId });
+        }
+      }
+      else
+      {
+        Author NewAuthor = new Author();
+        NewAuthor.AuthorName = AuthorName;
+        _db.Authors.Add(NewAuthor);
+        _db.AuthorBook.Add( new AuthorBook() { AuthorId = NewAuthor.AuthorId, BookId = book.BookId });
+      }
+      _db.Entry(book).State = EntityState.Modified;
+      _db.SaveChanges();
+      return RedirectToAction("Details", new { id = book.BookId });
+    }
+
+// add author 
+
+  // public ActionResult Edit(int id)
+  //   {
+  //     var thisBook = _db.Books.FirstOrDefault(book => book.BookId == id);
+  //     ViewBag.AuthorId = new SelectList(_db.Authors, "AuthorId", "AuthorName");
+  //     return View(thisBook);
+  //   }
+
+  //   [HttpPost]
+  //   public ActionResult Edit(Book book, int AuthorId, string AuthorName)
+  //   {
+  //     if (AuthorName == "")
+  //     {
+  //       if (AuthorId != 0)
+  //       {
+  //         _db.AuthorBook.Add(new AuthorBook() { AuthorId = AuthorId, BookId = book.BookId });
+  //       }
+  //     }
+  //     else
+  //     {
+  //       Author NewAuthor = new Author();
+  //       NewAuthor.AuthorName = AuthorName;
+  //       _db.Authors.Add(NewAuthor);
+  //       _db.AuthorBook.Add( new AuthorBook() { AuthorId = NewAuthor.AuthorId, BookId = book.BookId });
+  //     }
+  //     _db.Entry(book).State = EntityState.Modified;
+  //     _db.SaveChanges();
+  //     return RedirectToAction("Details", new { id = book.BookId });
+  //   }
+
+
+
+
   }
 }
-
