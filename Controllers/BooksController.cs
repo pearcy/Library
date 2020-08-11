@@ -26,12 +26,21 @@ namespace Library.Controllers
       return View();
     }
     [HttpPost]
-    public ActionResult Create(Book book, int AuthorId)
+    public ActionResult Create(Book book, int AuthorId, string AuthorName)
     {
       _db.Books.Add(book);
-      if (AuthorId != 0)
+      if (AuthorName == "")
       {
-        _db.AuthorBook.Add(new AuthorBook() { AuthorId = AuthorId, BookId = book.BookId });
+        if (AuthorId != 0)
+        {
+          _db.AuthorBook.Add(new AuthorBook() { AuthorId = AuthorId, BookId = book.BookId });
+        }
+      } else
+      {
+        Author NewAuthor = new Author();
+        NewAuthor.AuthorName = AuthorName;
+        _db.Authors.Add(NewAuthor);
+        _db.AuthorBook.Add( new AuthorBook() { AuthorId = NewAuthor.AuthorId, BookId = book.BookId });
       }
       _db.SaveChanges();
       return RedirectToAction("Index");

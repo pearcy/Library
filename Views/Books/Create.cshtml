@@ -17,6 +17,9 @@
   @Html.Label("Number of copies available: ")
   @Html.TextBoxFor(model => model.CopyCount, new { type = "number" })<br><br>
 
+  @Html.Label("Create a new Author to add to this book: ")
+  @Html.TextBox("AuthorName")<br><br>
+
   @Html.Label("Author")
   @Html.DropDownList("AuthorId")<br><br>
 
