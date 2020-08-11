@@ -7,13 +7,12 @@ namespace Library.Models
     public Book()
     {
       this.Authors = new HashSet<AuthorBook>();
-      this.Patrons = new HashSet<BookPatron>();
+      this.Patrons = new HashSet<BookPatron>(); // Patrons who have currently checked out this book, length must be less than CopyCount to checkout
     }
 
     public int BookId { get; set; }
 
     public int CopyCount { get; set; }
-    public int OnLoanCount { get; set; } = 0;
 
     public string BookTitle { get; set; }
 
