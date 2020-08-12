@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Patrons/Details.cshtml",
+      "TargetPath": "Views\\Patrons\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Index.cshtml",
       "TargetPath": "Views\\Books\\Index.cshtml",
       "FileKind": "mvc"
@@ -2983,6 +2988,26 @@
     {
       "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Authors/Index.cshtml",
       "TargetPath": "Views\\Authors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Authors/Edit.cshtml",
+      "TargetPath": "Views\\Authors\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Patrons/Create.cshtml",
+      "TargetPath": "Views\\Patrons\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Delete.cshtml",
+      "TargetPath": "Views\\Books\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Patrons/Delete.cshtml",
+      "TargetPath": "Views\\Patrons\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2998,6 +3023,26 @@
     {
       "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Books/Details.cshtml",
       "TargetPath": "Views\\Books\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Authors/Create.cshtml",
+      "TargetPath": "Views\\Authors\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Authors/Delete.cshtml",
+      "TargetPath": "Views\\Authors\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Patrons/Edit.cshtml",
+      "TargetPath": "Views\\Patrons\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/pearcy/epicode2/11week/Library.Solution/Library/Views/Authors/Details.cshtml",
+      "TargetPath": "Views\\Authors\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -11,11 +11,12 @@
   {
     <h3>No Books have been Added</h3>
   }
-
+<ul>
   @foreach (Book book in Model)
   {
     <li>@Html.ActionLink($"{book.BookTitle}", "Details", new { id = book.BookId })</li>
   }
+</ul>
 
   <p>@Html.ActionLink("Add New Book", "Create")</p>
   <p>@Html.ActionLink("Home", "Index", "Home")</p>

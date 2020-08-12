@@ -14,9 +14,15 @@
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.TagHelpers.input.cache
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.TagHelpers.output.cache
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.RazorCoreGenerate.cache
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Authors/Create.g.cshtml.cs
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Authors/Delete.g.cshtml.cs
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Authors/Details.g.cshtml.cs
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Authors/Edit.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Authors/Index.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Create.g.cshtml.cs
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Delete.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Details.g.cshtml.cs
+/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Edit.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Index.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Patrons/Index.g.cshtml.cs
@@ -27,4 +33,3 @@
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.dll
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.pdb
 /Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Library.csproj.CopyComplete
-/Users/pearcy/epicode2/11week/Library.Solution/Library/obj/Debug/netcoreapp2.2/Razor/Views/Books/Edit.g.cshtml.cs
